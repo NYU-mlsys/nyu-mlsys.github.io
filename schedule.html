@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, content=no-cache">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+  <title>Big Data and Machine Learning Systems</title>
+</head>
+
+<body>
+<br>
+    <div class="container">
+      <header class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-left">
+            <li class="nav-item">
+              <a class="nav-link " href=".">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+		    <a class="nav-link" href="labs">Lab</a>
+            </li>
+          </ul>
+        </nav>
+	<div class="row">
+		<div class="col-sm-4"><a href="https://xkcd.com/1838/"><img src="mlsys-logo.jpg" width=180></a></div>
+		<div class="col-sm-8">
+		<div class="row">
+      <div style="color:#CD5C5C;">
+        <h3 >Big Data and Machine Learning Systems</h3>
+      </div>
+		</div>
+		<div class="row">
+      CSCI-GA.3033(077), Spring 2024
+		</div>
+		</div>
+	</div>
+      </header>
+
+<style>
+table tbody tr:hover {
+    background-color: #d6eaf8; /* Light blue on hover */
+}
+table thead tr {
+}
+table {
+  font-size:16px;
+}
+</style>
+
+
+          <div class="container" style="margin-top:5px">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width:7em">Date</th>
+                            <th>Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td>Week 1 (1/24)</td>
+                            <td><b><p>Introduction, the Model</p></b>
+                                  Optional Readings:
+                                  <ul>
+                                    <li><a href="https://www.deeplearningbook.org/contents/mlp.html">Deep Learning Book Chap 6.1-6.4</li>
+                                    <li><a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf">How to read a paper</a></li>
+                                  </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Week 2 (1/31)</td>
+                            <td><b><p>The Frameworks</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf">TensorFlow: A System for Large-Scale Machine Learning</a></li>
+                                  <li><a href="https://arxiv.org/abs/1912.01703">PyTorch: An Imperative Style, High-Performance Deep Learning Library</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Week 3 (2/7)</td>
+                            <td><b><p>The Hardware</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://developer.nvidia.com/blog/even-easier-introduction-cuda">An even easier introduction to CUDA</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide">Cuda C++ Programming Guide</a>(Sec 2 and 3)</li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Week 4 (2/14)</td>
+                            <td><b><p>Compilation and Optimization I</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="TVM: An Automated End-to-End Optimizing Compiler for Deep Learning">TVM: An Automated End-to-End Optimizing Compiler for Deep Learning</a></li>
+                                  <li><a href="https://arxiv.org/abs/1805.08166">Learning to Optimize Tensor Programs</a></li>
+                                  <li><a href="https://www.usenix.org/system/files/osdi20-zheng.pdf">Ansor: Generating High-Performance Tensor Programs for Deep Learning</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href="https://dl.acm.org/doi/pdf/10.1145/3575693.3576933">TensorIR: An Abstraction for Automatic Tensorized Program Optimization</a></li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+
+                      <tr>
+                            <td>Week 5 (2/21)</td>
+                            <td><b><p>Compilation and Optimization I</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf">Triton: An Intermediate Language and Compiler for Tiled Neural Network Computations</a></li>
+                                  <li><a href="">Hidet</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href="https://arxiv.org/pdf/2202.03293.pdf">Composable and Modular Code Generation in MLIR</a></li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Week 6 (2/28)</td>
+                            <td><b><p>Compilation and Optimization II</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://dl.acm.org/doi/10.1145/3453483.3454083">DNNFusion: accelerating deep neural networks execution with advanced operator fusion</a></li>
+                                  <li><a href="https://cs.stanford.edu/~padon/taso-sosp19.pdf">TASO: Optimizing Deep Learning Computation with Automatic Generation of Graph Substitutions</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href="https://www.usenix.org/conference/osdi21/presentation/wang">Pet: Optimizing Tensor Programs with Partially Equivalent Transformations and Automated Corrections</a></li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Week 7 (3/6)</td>
+                            <td><b><p>Training I: data vs. model parallelism</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://arxiv.org/pdf/2006.15704.pdf">PyTorch Distributed: Experiences on Accelerating Data Parallel Training</a></li>
+                                  <li><a href="https://arxiv.org/pdf/1404.5997.pdf">One weird trick for parallelizing convolutional neural networks</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href=""></a></li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>Week 8 (3/13)</td>
+                            <td><b><p>Training II: pipeline parallelism</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://arxiv.org/abs/1811.06965">GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism</a></li>
+                                  <li><a href="https://deepakn94.github.io/assets/papers/pipedream-sosp19.pdf">PipeDream: Fast and Efficient Pipeline Parallel DNN Training</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href="https://deepakn94.github.io/assets/papers/pipedream-sosp19.pdf">Memory-Efficient Pipeline-Parallel DNN Training</a></li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+                      
+
+                        <tr>
+                            <td>Week 9 (3/20)</td>
+                            <td><b><p>Spring Break</p></b>
+                            </td>
+                        </tr>
+
+
+                      <tr>
+                            <td>Week 10 (3/27)</td>
+                            <td><b><p>Training III: automatic parallelization</p></b>
+                                Required Readings:
+                                <ul>
+                                  <li><a href="https://news.cs.nyu.edu/~jinyang/pub/tofu-eurosys19.pdf">Supporting Very Large Models using Automatic Dataflow Graph Partitioning</a></li>
+                                  <li><a href="https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin">Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning</a></li>
+                                </ul>
+                                Optional:
+                                <ul>
+                                  <li><a href="https://www.usenix.org/system/files/osdi22-unger.pdf">Unity: Accelerating DNN Training Through Joint Optimization of Algebraic Transformations and Parallelization</a></li>
+                                </ul>
+                            </ul>
+                            </td>
+                        </tr>
+
+
+                    <tr>
+                     <td>Week 11 (4/3)</td>
+                            <td><b><p>Training IV: Training LLMs</p></b>
+                            Required Readings:
+                            <ul>
+                              <li><a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need</a></li>
+                              <li><a href="https://arxiv.org/pdf/1909.08053.pdf">Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism</a></li>
+                            </ul>
+                            Optional:
+                            <ul>
+                            <a href="https://arxiv.org/pdf/2304.00612.pdf">Eight Things to Know about Large Language Models</a></li>
+                            </ul>
+                            </td>
+                    </tr>
+                    <tr>
+
+                            <td>Week 12 (4/10)</td>
+                            <td><b><p>Training V: Training LLMs</p></b>
+                            Required Readings:
+                            <ul>
+                              <li><a href="https://arxiv.org/pdf/1910.02054.pdf">ZeRO: Memory Optimizations Toward Training Trillion Parameter Models</a></li>
+                              <li><a href="https://arxiv.org/pdf/2304.11277.pdf">PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel</a></li>
+                            </ul>
+                            Optional:
+                            <ul>
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3567955.3567959">Overlap Communication with Dependent Computation via Decomposition in Large Deep Learning Models</a></li>
+                            </ul>
+                            </td>
+
+                        </tr>
+                    <tr>
+                           <td>Week 13 (4/17)</td>
+                           <td><b><p>Inference:</p></b>
+                             Required readings:
+                             <ul>
+                               <li><a href="https://www.usenix.org/system/files/osdi22-yu.pdf">Orca: A Distributed Serving System for Transformer-Based Generative Models</a></li>
+                               <li><a href=""></a>FlexGen?</li>
+                             </ul>
+                           </td>
+                    </tr>
+                    
+                    <tr>
+                           <td>Week 14 (4/24)</td>
+                           <td><b><p>Quantization</p></b>
+                           </td>
+                    </tr>
+
+                    <tr>
+                           <td>Week 15 (4/25)</td>
+                           <td><b><p>Final Project Presentation</p></b>
+                           </td>
+                    </tr>
+
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
