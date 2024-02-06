@@ -4,7 +4,7 @@ In this course, you will be assigned with labs requiring CUDA programming and GP
 
 Everyone in the course is assigned with 300 GPU hours. And the following partitions are allowed to use:
 
-```json
+```
 CSCI_GA_3033_077_2024sp = {
   accounts = { "csci_ga_3033_077-2024sp" },
   partitions = { "interactive", "n1s8-v100-1", "n1s16-v100-2", "n2c48m24" }
