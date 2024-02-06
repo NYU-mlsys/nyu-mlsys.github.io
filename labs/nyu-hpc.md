@@ -98,7 +98,9 @@ bash-4.4$
 
 This part is not required for you to be able to use the HPC. But if you are familiar with ssh and you want to for example connect VSCode to the instances, you can take a look at this part. But keep in mind, you need to know what you are doing rather than copy the commands. Otherwise, you can stick to the part above. 
 
-First, you can set up the `~/.ssh/config` file in your laptop and copy your public key to the `~/.ssh/authorized_keys` in the servers (both greene and burst). For example, you can have
+First you need to have your public and private key pair in order to use ssh without password. This can be done by `ssh-kengen` command if you do not have one. After the keygen, you will find the private key at `~/.ssh/id_rsa` and the public key at `~/.ssh/id_rsa.pub`. Keep the private key to yourself, and put your public key at the `~/.ssh/authorized_keys` file in the servers (both greene and burst)
+
+Next, you can set up the `~/.ssh/config` file in your laptop. For example, you can have
 
 ```
 Host greene
@@ -112,7 +114,7 @@ Host burst
     User NetID
 ```
 
-If you do want to directly connect to the instance, either via ssh or VSCode, you need to use `sbatch` rather than `srun` to open up an instance. For example, launching a GPU node for one hour can be
+If you want to directly connect to the instance, either via ssh or VSCode, you need to use `sbatch` rather than `srun` to open up an instance. For example, launching a GPU node for one hour can be
 
 ```bash
 sbatch --account=csci_ga_3033_077-2024sp --partition=n1s8-v100-1 --gres=gpu:v100:1 --time=01:00:00 --wrap "sleep infinity"
