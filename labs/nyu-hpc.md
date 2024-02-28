@@ -92,6 +92,7 @@ exit
 bash-4.4$
 ```
 
+For those who want to use CUDA nvcc compilers in the HPC login nodes, you can run `module load cuda/11.6.2` to load the nvcc compiler in the HPC login nodes (not burst nodes/instances). Please note that there is no GPU on the login node, so you can only compile but not run the code in this mode.
 
 
 ## Optional Instructions for `ssh` Pro Users
