@@ -115,9 +115,6 @@ table {
                                 </ul>
                                 Optional:
                                 <ul>
-                                  <!--<li><a href="https://arxiv.org/abs/1805.08166">Learning to Optimize Tensor Programs</a></li>-->
-                                  <li><a href="https://www.usenix.org/system/files/osdi18-chen.pdf">TVM: An Automated End-to-End Optimizing Compiler for Deep Learning</a></li>
-                                  <li><a href="https://www.usenix.org/system/files/osdi20-zheng.pdf">Ansor: Generating High-Performance Tensor Programs for Deep Learning</a></li>
                                   <li><a href="https://dl.acm.org/doi/pdf/10.1145/3575693.3576933">TensorIR: An Abstraction for Automatic Tensorized Program Optimization</a></li>
                                   <li><a href="https://arxiv.org/abs/2210.09603">Hidet: Task-Mapping Programming Paradigm for Deep Learning Tensor Programs</a></li>
                                   <!---<li><a href="https://arxiv.org/pdf/2202.03293.pdf">Composable and Modular Code Generation in MLIR</a></li>-->
@@ -131,11 +128,14 @@ table {
                             <td><b><p>Compilation and Optimization II</p></b>
                                 Required Readings:
                                 <ul>
-                                  <li><a href="https://dl.acm.org/doi/10.1145/3453483.3454083">DNNFusion: accelerating deep neural networks execution with advanced operator fusion</a></li>
+                                  <li><a href="https://www.usenix.org/system/files/osdi18-chen.pdf">TVM: An Automated End-to-End Optimizing Compiler for Deep Learning</a></li>
+                                  <li><a href="https://www.usenix.org/system/files/osdi20-zheng.pdf">Ansor: Generating High-Performance Tensor Programs for Deep Learning</a></li>
                                   <li><a href="https://cs.stanford.edu/~padon/taso-sosp19.pdf">TASO: Optimizing Deep Learning Computation with Automatic Generation of Graph Substitutions</a></li>
                                 </ul>
                                 Optional:
                                 <ul>
+				  <li><a href="https://arxiv.org/abs/1805.08166">Learning to Optimize Tensor Programs</a></li>
+                                  <li><a href="https://dl.acm.org/doi/10.1145/3453483.3454083">DNNFusion: accelerating deep neural networks execution with advanced operator fusion</a></li>
                                   <li><a href="https://www.usenix.org/conference/osdi21/presentation/wang">Pet: Optimizing Tensor Programs with Partially Equivalent Transformations and Automated Corrections</a></li>
                                 </ul>
                             </ul>
@@ -149,10 +149,12 @@ table {
                                 <ul>
                                   <li><a href="https://arxiv.org/pdf/2006.15704.pdf">PyTorch Distributed: Experiences on Accelerating Data Parallel Training</a></li>
                                   <li><a href="https://news.cs.nyu.edu/~jinyang/pub/tofu-eurosys19.pdf">Supporting Very Large Models using Automatic Dataflow Graph Partitioning</a></li>
-                                </ul>
+				  <li><a href="https://arxiv.org/pdf/1910.02054">ZeRO: Memory Optimizations Toward Training Trillion Parameter Models</a></li>
+				</ul>
                                 Optional:
                                 <ul>
-                                  <li><a href="https://arxiv.org/pdf/1404.5997.pdf">One weird trick for parallelizing convolutional neural networks</a></li>
+                                 <!-- <li><a href="https://arxiv.org/pdf/1404.5997.pdf">One weird trick for parallelizing convolutional neural networks</a></li>-->
+                              	  <li><a href="https://arxiv.org/pdf/2304.11277.pdf">PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel</a></li>
                                 </ul>
                             </ul>
                             </td>
@@ -178,15 +180,16 @@ table {
 
                         <tr>
                             <td>Week 8 (10/22)</td>
-                            <td><b><p>Training III: automatic parallelization</p></b>
+                            <td><b><p>Training III: automatic parallelization and optimization</p></b>
                                 Required Readings:
                                 <ul>
                                   <li><a href="https://www.usenix.org/conference/osdi22/presentation/zheng-lianmin">Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning</a></li>
-                                  <li><a href="https://www.usenix.org/system/files/osdi22-unger.pdf">Unity: Accelerating DNN Training Through Joint Optimization of Algebraic Transformations and Parallelization</a></li>
+                              <li><a href="https://dl.acm.org/doi/pdf/10.1145/3567955.3567959">Overlap Communication with Dependent Computation via Decomposition in Large Deep Learning Models</a></li>
                                 </ul>
                                 Optional:
                                 <ul>
                                   <li><a href="https://arxiv.org/abs/2105.04663">GSPMD: General and Scalable Parallelization for ML Computation Graphs</a></li>
+                                  <li><a href="https://www.usenix.org/system/files/osdi22-unger.pdf">Unity: Accelerating DNN Training Through Joint Optimization of Algebraic Transformations and Parallelization</a></li>
                                 </ul>
                             </ul>
                             </td>
@@ -215,15 +218,13 @@ table {
                             Required Readings:
                             <ul>
                               <li><a href="https://arxiv.org/pdf/1909.08053.pdf">Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism</a></li>
-                              <li><a href="https://arxiv.org/pdf/2304.11277.pdf">PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel</a></li>
-                              <li><a href="https://arxiv.org/abs/2402.15627">MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs</a></li>
+			      <li><a href="https://arxiv.org/abs/2509.16293">Robust LLM Training Infrastructure at ByteDance</a></li>
                             </ul>
                             Optional:
                             <ul>
-                              <li><a href="https://arxiv.org/pdf/1910.02054.pdf">ZeRO: Memory Optimizations Toward Training Trillion Parameter Models</a></li>
+                              <li><a href="https://arxiv.org/abs/2402.15627">MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs</a></li>
                               <li><a href="https://arxiv.org/pdf/2104.04473.pdf">Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM</a></li>
                               <li><a href="https://arxiv.org/pdf/2205.05198.pdf">Reducing Activation Recomputation in Large Transformer Models</a></li>
-                              <li><a href="https://dl.acm.org/doi/pdf/10.1145/3567955.3567959">Overlap Communication with Dependent Computation via Decomposition in Large Deep Learning Models</a></li>
                             </ul>
                             </td>
                     </tr>
